@@ -8,8 +8,8 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props) => {
     return(
         <>
-        <article className={styles.inicio}>
-            <div>
+        <article >
+            <div className={styles.inicio}>
             <h1>{props.titulo}</h1>
             <p>{props.primeiralinha}</p>
             </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import blogLogo from '/joash-icon.png';
 import styles from './Hud.module.css';
 
+import { Link } from "react-router-dom";
+
 interface HudProps {
   inicio: string;
   posts: string;
@@ -14,10 +16,10 @@ const Hud: React.FC<HudProps> = (props) => {
         <>
         <header className={styles.cabecario}>
             <div>
-            <p>{props.inicio}</p>
-            <p>{props.posts}</p>
-            <p>{props.project}</p>
-            <p>{props.contato}</p>
+            <Link className={styles.link} to='/'>{props.inicio}</Link>
+            <Link className={styles.link} to='/Post'>{props.posts}</Link>
+            <Link className={styles.link} to='/Project'>{props.project}</Link>
+            <Link className={styles.link} to='/Contato'>{props.contato}</Link>
             </div>
 
         </header ></>
