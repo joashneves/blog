@@ -1,0 +1,30 @@
+.logo{
+    display: flex;
+    --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+    --accent: fuchsia;
+    width: 9rem;
+    height: 9rem;
+    background-color: #212121;
+    border: 1rem;
+    border-radius: 1.1em;
+    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+
+}
+.cabecario{
+    display: flex;
+    background-color: #111111;
+}
+.cabecario div{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    margin: 1rem;
+}.cabecario div p{
+    margin: 1rem;
+}
+.cabecario img{
+    margin: 1rem;
+    align-items: end;
+}
