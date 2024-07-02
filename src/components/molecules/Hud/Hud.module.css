@@ -18,6 +18,14 @@
 
 .cabecario .link {
     margin: 0 1rem;
+
+    padding: 10px 20px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .link:link,
@@ -33,7 +41,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.link:hover{
+    color: var(--var-hud-color-black);
+    background-color: #f1f1f1;
 
+}
 .cabecario img {
     margin: 1rem;
 }

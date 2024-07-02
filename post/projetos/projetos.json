@@ -1,0 +1,14 @@
+[
+    {
+        "titulo": "Discord Bot",
+        "descricao": "O projeto skarlet se consiste em criar uma bot um pouco basico, mas nem tão baisco para o discord, mantendo suas funções padroes como, exibir avatar de outro usuario, dizer o ping, exibir emoties, reações personalizadas, e um pouco mais.",
+        "link": "https://github.com/joashneves/discordBot",
+        "data": "02/07/2024"
+    },
+    {
+        "titulo": "Mapas",
+        "descricao": "Um projeto de mapeamento de lotes, ele mostra quais lotes estão ou não disponiveis para alugar, projeto da prefeitura de presidente kennedy para a festa das neves.",
+        "link": "https://github.com/joashneves/Mapa",
+        "data": "02/07/2024"
+    }
+]

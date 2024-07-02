@@ -1,0 +1,7 @@
+.exibir{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+    gap: 2rem; /* Espaçamento entre linhas e colunas */
+}
