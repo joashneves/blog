@@ -1,57 +1,39 @@
-.logo{
+.cabecario {
     display: flex;
-    --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
-    --accent: fuchsia;
-    width: 9rem;
-    height: 9rem;
-    background-color: #212121;
-    border: 1rem;
-    border-radius: 1.1em;
-    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
-    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
-  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Para garantir que a HUD fique acima do conteúdo */
+    background-color: var(--var-hud-color-black);
+    width: 100%;
+    text-align: center; /* Opcional: para centralizar o conteúdo dentro do cabeçalho */
+    padding: 1rem 0;
+}
 
-}
-.cabecario{
-    display: flex;
-    background-color: #111111;
-}
-.cabecario div{
+.cabecario div {
     display: flex;
     align-items: center;
-    align-content: space-between;
-    margin: 1rem;
-}.cabecario div .link{
-    margin: 1rem;
+    justify-content: start;
+    width: 100%;
 }
-.link:link{
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-  
-    color-scheme: light dark;
+
+.cabecario .link {
+    margin: 0 1rem;
+}
+
+.link:link,
+.link:visited {
+    font-size: 2rem;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Ajuste o peso conforme necessário */
     color: rgba(255, 255, 255, 0.87);
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
-}
-.link:visited{
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-  
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-  
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.cabecario img{
+
+.cabecario img {
     margin: 1rem;
-    align-items: end;
 }

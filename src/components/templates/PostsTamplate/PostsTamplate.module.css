@@ -1,0 +1,23 @@
+.post{
+    display: flex;
+    flex-direction: initial;
+    align-content: initial;
+    align-self: center;
+    align-items: center;
+    background-color: var(--var-background-color-black);
+
+    width: 16rem;
+    height: 9rem;
+    margin: 1rem;
+
+}
+
+.post h1{
+    font-size: medium;
+    
+}
+
+.post:hover{
+    background-color: var(--var-hud-color-black);
+    cursor: pointer;
+}

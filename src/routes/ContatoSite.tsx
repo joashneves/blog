@@ -1,10 +1,11 @@
-import Hud from "../components/molecules/Hud/Hud";
+
+import ContatoPage from "../components/pages/ContatoPage";
 
 const ContatoSite = () =>{
     return(
         <>
-        <Hud inicio='Inicio' posts='Posts' project='Project' contato='Contato'/>
-        <div><p>Contato</p></div></>
+        <ContatoPage/>
+        </>
     )
 }
 

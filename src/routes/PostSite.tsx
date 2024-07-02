@@ -1,11 +1,10 @@
-import Hud from "../components/molecules/Hud/Hud";
-
+import PostsPage from "../components/pages/PostsPage";
 
 const PostSite = () =>{
     return(
         <>
-        <Hud inicio='Inicio' posts='Posts' project='Project' contato='Contato'/>
-        <div><p>Post!</p></div></>
+        <PostsPage/>
+        </>
     )
 }
 

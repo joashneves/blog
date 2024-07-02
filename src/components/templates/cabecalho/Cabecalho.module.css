@@ -1,0 +1,7 @@
+.cabecalho {
+    background-color: var(--var-hud-color-black);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Opcional: para centralizar o conteúdo dentro do cabeçalho */
+}
