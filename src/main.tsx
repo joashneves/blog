@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import App from './App.tsx'
+
 import './index.css'
 import HomeSite from './routes/HomeSite.tsx'
 import PostSite from './routes/PostSite.tsx'
