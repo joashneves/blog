@@ -7,6 +7,7 @@
     width: 100%;
     text-align: center; /* Opcional: para centralizar o conteúdo dentro do cabeçalho */
     padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .cabecario div {

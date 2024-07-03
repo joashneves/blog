@@ -10,5 +10,11 @@
         "descricao": "Um projeto de mapeamento de lotes, ele mostra quais lotes estão ou não disponiveis para alugar, projeto da prefeitura de presidente kennedy para a festa das neves.",
         "link": "https://github.com/joashneves/Mapa",
         "data": "06/05/2024"
+    },
+    {
+        "titulo": "Game: Ominigun",
+        "descricao": "Este é um pequeno jogo no qual eu vim trabalhando, então decidi posta-lo para download para que outras pessoas pudessem joga-lo e caso se sentirem a vontade poderem criar sugestões para o jogo.",
+        "link": "https://joashneves.itch.io/ominigun",
+        "data": "22/01/2024"
     }
 ]

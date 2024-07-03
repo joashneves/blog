@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Blog Pessoal de Joás Neves
+## Visão Geral
+Bem-vindo ao meu blog pessoal! Este espaço foi criado para compartilhar meus projetos, ideias e experiências na área de desenvolvimento de software e além. Aqui você encontrará uma variedade de conteúdos, desde posts técnicos até reflexões pessoais sobre minha jornada no mundo da programação.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Funcionalidades
+Posts de Blog: Explore uma variedade de posts sobre programação, tecnologia e desenvolvimento pessoal.
 
-Currently, two official plugins are available:
+- Portfólio: Conheça meus projetos e experimentos recentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Sobre Mim: Saiba mais sobre minha jornada, interesses e objetivos na área de tecnologia.
 
-## Expanding the ESLint configuration
+- Contato: Conecte-se comigo através das redes sociais ou envie-me um email diretamente pelo formulário de contato.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Tecnologias Utilizadas
+- Frontend: React, TypeScript para renderização de conteúdo dinâmico.
 
-- Configure the top-level `parserOptions` property like this:
+- Estilização: Tailwind CSS para uma estilização moderna e responsiva.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Integração: Vite como bundler e servidor de desenvolvimento rápido.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Backend: Integração com serviços de email para envio de confirmações.
+
+### Tarefas a serem feitas
+
+[ ] site responsivo para celular
+[ ] Configuração de estilização personalizada
+[ ] Acessibilidade
+[ ] Pequenos ajustes

@@ -4,4 +4,5 @@
     bottom: 0;
     width: 100%;
     text-align: center; /* Opcional: para centralizar o conteúdo dentro do cabeçalho */
+    margin-top: 1rem;
 }

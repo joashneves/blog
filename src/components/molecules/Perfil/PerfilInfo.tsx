@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from './PerfilInfo.module.css'
 
-import fotoPerfil0 from '../../../../public/perfil_joas_0.jpeg'
+import fotoPerfil0 from '../../../assets/perfil_joas_0.jpeg'
 
 const PerfilInfo = () => {
 
