@@ -11,6 +11,14 @@
     -15px -15px 30px rgb(60, 60, 60);
     border: 1px solid #ccc;
 }
+.sobreMim{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+.sobreMimFoto{
+    height: 100%;
+}
 .perfilInfo {
     display: flex;
     flex-direction: column;
@@ -27,19 +35,20 @@
 .perfilInfo li{
     margin: 6px;
 }
-.perfilInfo img {
+.habilidadesImg {
     background-color: var(--var-hud-color-black);
     height: 64px;
     padding: 10px;
     margin: 10px;
-}
-.perfilInfo img:hover {
+  }
+  
+  .habilidadesImg:hover {
     background-color: var(--var-hud-color-black);
     padding: 12px;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
     -15px -15px 30px rgb(60, 60, 60);
-border: 1px solid #ccc;
-}
+    border: 1px solid #ccc;
+  }
 .perfilInfo h1{
     font-style: oblique;
     font-size: 3rem;
