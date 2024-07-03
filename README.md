@@ -22,7 +22,7 @@ Posts de Blog: Explore uma variedade de posts sobre programação, tecnologia e 
 
 ### Tarefas a serem feitas
 
-[ ] site responsivo para celular
-[ ] Configuração de estilização personalizada
-[ ] Acessibilidade
-[ ] Pequenos ajustes
+- [ ] site responsivo para celular
+- [ ] Configuração de estilização personalizada
+- [ ] Acessibilidade
+- [ ] Pequenos ajustes
