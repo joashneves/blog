@@ -1,15 +1,14 @@
 .postagem {
     color: #f1f1f1;
-    
     margin: 0 auto;
     padding: 40px;
     background-color: #111;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
   }
   
   .content {
     margin-top: 13px;
+    padding: 0px 48px 0px 48px;
     line-height: 1.6;
     font-size: 16px;
     color: #fff;
@@ -43,7 +42,7 @@
   .content pre {
     margin-top: 13px;
     color: #111;
-    background-color: #f5f5f5;
+    background-color: #c2c2c2;
     padding: 10px;
     border-radius: 8px;
     overflow-x: auto;

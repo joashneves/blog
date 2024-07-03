@@ -45,24 +45,36 @@
     background-color: #000000;
     transition-duration: .3s;
   }
-  
+  .containerSix:hover{
+    background-color: #fa5c5c;
+    transition-duration: .3s;
+  }
   .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
   }
-  
   .socialSvg {
-    width: 17px;
+    width: 19px;
   }
-  
+
   .socialSvg path {
     fill: rgb(255, 255, 255);
   }
   
-  .socialContainer:hover .socialSvg {
+  .itchioSvg {
+    width: auto;
+  }
+
+  .itchioSvg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .socialContainer:hover .socialSvg  {
     animation: slide-in-top 0.3s both;
   }
-  
+  .itchioSvg:hover{
+    animation: slide-in-top 0.3s both;
+  }
   @keyframes slide-in-top {
     0% {
       transform: translateY(-50px);

@@ -1,5 +1,6 @@
 import styles from './Social.module.css' // styles by https://github.com/vinodjangid07
 
+import itchio from '../../../assets/itch-svgrepo-com.svg'
 const Social = () => {
     return (
         <div className={styles.card}>
@@ -34,6 +35,9 @@ const Social = () => {
                         fill="currentColor"
                     ></path>
                 </svg>
+            </a>
+            <a href="https://github.com/joashneves" className={`${styles.socialContainer} ${styles.containerSix}`}>
+                <img src={itchio} alt='itchio-icon' className={`${styles.socialSvg} ${styles.itchioSvg}`} />
             </a>
         </div>
     );
