@@ -14,9 +14,9 @@ const ProjectPage: React.FC = () => {
                 {json.map((data, index) => (
                     <ProjectTemplate
                         key={index} // Adicione uma chave única para cada item
-                        link={data.link}
                         titulo={data.titulo}
                         descricao={data.descricao}
+                        link={data.link}
                         data={data.data}
                     />
                 ))}

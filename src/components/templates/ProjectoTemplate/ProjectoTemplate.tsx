@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import styles from './ProjectoTemplate.module.css';
 
 interface ProjectProps {
-    titulo: string;
-    descricao: string;
-    link: string;
-    data: string;
+    titulo: string,
+    descricao: string,
+    link: string,
+    data: string
 }
 
 const ProjectTemplate: React.FC<ProjectProps> = (props) => {

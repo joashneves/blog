@@ -9,6 +9,7 @@ import HomeSite from './routes/HomeSite.tsx'
 import PostSite from './routes/PostSite.tsx'
 import ProjectSite from './routes/ProjectSite.tsx'
 import ContatoSite from './routes/ContatoSite.tsx'
+import Postagem from './components/pages/Postagem/Postagem.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/Post",
     element: <PostSite/>,
+  },
+  {
+    path: "/Postagem/:id",
+    element: <Postagem/>,
   },
   {
     path: "/Project",
