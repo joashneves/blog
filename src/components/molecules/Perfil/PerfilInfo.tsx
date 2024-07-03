@@ -3,6 +3,8 @@ import styles from './PerfilInfo.module.css'
 
 import fotoPerfil0 from '../../../assets/perfil_joas_0.jpeg'
 
+import gamemaker from '../../../assets/light-gamemaker2-svgrepo-com.svg'
+
 const PerfilInfo = () => {
 
     return (
@@ -51,28 +53,14 @@ const PerfilInfo = () => {
                             <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">
                                 <img className={styles.habilidadesImg} src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" />
                             </a>
+                            <a href="https://gamemaker.io/pt-BR" target="_blank" rel="noopener noreferrer">
+                                <img className={styles.habilidadesImg} src='https://img.icons8.com/?size=100&id=34299&format=png&color=000000' alt="gamemaker2" />
+                            </a>
                         </div>
                     </td>
                 </tr>
             </table>
-            <h1 >CONECTE COMIGO</h1>
-            <div className={styles.socialRedes}>
-                <a href="https://github.com/joashneves" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.socialRedesImg} src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" style={{ marginBottom: "5px" }} />
-                </a>
-                <a href="https://twitter.com/OYoyatsu" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.socialRedesImg} src="https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="twitter" style={{ marginBottom: "5px" }} />
-                </a>
-                <a href="https://www.linkedin.com/in/joas-neves-b8340a290/" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.socialRedesImg} src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" style={{ marginBottom: "5px" }} />
-                </a>
-                <a href="https://www.instagram.com/joashneves/" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.socialRedesImg} src="https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white" alt="instagram" style={{ marginBottom: "5px" }} />
-                </a>
-                <a href="https://www.youtube.com/@jjoash_" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.socialRedesImg} src="https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white" alt="youtube" style={{ marginBottom: "5px" }} />
-                </a>
-            </div>
+            
 
         </article>
     );

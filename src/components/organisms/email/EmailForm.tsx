@@ -57,7 +57,7 @@ const EmailForm: React.FC = () => {
   return (
     <div className={styles.email_form_container}>
       <form onSubmit={sendEmail} className={styles.email_form}>
-        <h2>Enviar Email de Confirmação</h2>
+        <h2>Me envie um email!</h2>
         <div className={styles.form_group}>
           <label htmlFor="title">Titulo</label>
           <input
