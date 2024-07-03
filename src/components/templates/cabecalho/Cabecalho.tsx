@@ -1,12 +1,12 @@
 import Social from "../../atoms/Social/Social"
 import styles from './Cabecalho.module.css'
 
-const Cabecalho = () =>{
+const Cabecalho = () => {
     return (
         <>
-        <div className={styles.cabecalho}>
-        <Social/>
-        </div></>
+            <div className={styles.cabecalho}>
+                <Social />
+            </div></>
     )
 }
 

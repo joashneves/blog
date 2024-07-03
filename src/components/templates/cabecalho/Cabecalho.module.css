@@ -1,4 +1,8 @@
 .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
     background-color: var(--var-hud-color-black);
     position: relative;
     bottom: 0;
