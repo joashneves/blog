@@ -5,7 +5,7 @@ import Cabecalho from "../templates/cabecalho/Cabecalho";
 const ContatoPage = () =>{
     return(
         <>
-        <Hud inicio='Inicio' posts='Posts' project='Project' contato='Contato'/>
+        <Hud inicio='Inicio' posts='Posts' project='Portifolio' contato='Contato'/>
         <div><PerfilInfo/></div>
         <Cabecalho/>
         </>

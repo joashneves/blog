@@ -1,10 +1,40 @@
 .inicio{
     display: flex;
+    padding: 2rem 12rem;
     flex-direction: column;
     align-items: center;
     align-self: center;
     background-color: #111111;
 }
-.inicio h1{
+.titulo{
+
+    padding: 2rem 12rem;
+    justify-self: center;
+    place-self: center;
     align-self: center;
+
+    font-style: oblique;
+    font-size: 3rem;
+    align-self: center;
+}
+.content{
+    display: grid;
+    padding: 2rem 12rem;
+    grid-template-columns: auto auto;
+    align-items: center;
+    align-self: center;
+    background-color: #111111;
+}
+.content p{
+    font-size: 1.2rem;
+    margin: 6px;
+}
+.imagemLinha{
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 100%;
+}
+.imagemLinha:hover{
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(60, 60, 60);
 }

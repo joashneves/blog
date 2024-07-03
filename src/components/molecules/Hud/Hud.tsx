@@ -13,7 +13,7 @@ interface HudProps {
 const Hud: React.FC<HudProps> = ({
       inicio = 'Inicio',
       posts = 'Posts',
-      project = 'Project',
+      project = 'Portifolio',
       contato = 'Contato'
     }) => {
   return (

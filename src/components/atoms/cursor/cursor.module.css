@@ -1,0 +1,19 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .cursor:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    transform: scale(1.5);
+  }
+  
+  
+  

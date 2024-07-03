@@ -9,7 +9,7 @@ import json from '../../../post/publicacao/publicacao.json'
 const PostsPage = () =>{
     return(
         <>
-        <Hud inicio='Inicio' posts='Posts' project='Project' contato='Contato'/>
+        <Hud inicio='Inicio' posts='Posts' project='Portifolio' contato='Contato'/>
         <div className={styles.postsColumn}>
         {json.map((data, index) => (
                     <PostsTamplate

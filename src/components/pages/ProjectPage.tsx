@@ -9,7 +9,7 @@ import json from '../../../post/projetos/projetos.json';
 const ProjectPage: React.FC = () => {
     return (
         <>
-            <Hud inicio='Inicio' posts='Posts' project='Project' contato='Contato' />
+            <Hud inicio='Inicio' posts='Posts' project='Portifolio' contato='Contato' />
             <div className={styles.exibir}>
                 {json.map((data, index) => (
                     <ProjectTemplate
