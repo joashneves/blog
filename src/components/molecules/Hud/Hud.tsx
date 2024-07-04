@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import blogLogo from '/joash-icon.png';
 import styles from './Hud.module.css';
 
 interface HudProps {

@@ -1,19 +1,15 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Hud from "../../molecules/Hud/Hud";
 import Cabecalho from "../../templates/cabecalho/Cabecalho";
 import styles from "./Postagem.module.css";
 
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism"; // Escolha um tema de realce de sintaxe
 
 
-interface PostagemProps {
-  id: string; // Alterado para string, já que está sendo obtido como string de useParams
-}
 
-const Postagem: React.FC<PostagemProps> = () => {
+
+const Postagem = () => {
   const { id } = useParams();
 
   // Importa dinamicamente o conteúdo do arquivo MDX como texto
@@ -38,11 +34,6 @@ const Postagem: React.FC<PostagemProps> = () => {
     fetchMDXContent();
   }, [id]);
 
-    // Função para renderizar o código com realce de sintaxe
-    const renderizaCodigo = ({ language, value }: { language: string; value: string }) => {
-        return <SyntaxHighlighter style={tomorrow} language={language} children={value} />;
-      };
-      
   return (
     <>
       <Hud />
@@ -56,14 +47,5 @@ const Postagem: React.FC<PostagemProps> = () => {
   );
 };
 
-// Componente para renderizar o conteúdo MDX como Markdown simples
-const MarkdownRenderer: React.FC<{ mdxContent: string }> = ({ mdxContent }) => {
-  return (
-    <div>
-      {/* Inserir aqui a lógica para renderizar o conteúdo Markdown */}
-      <pre>{mdxContent}</pre>
-    </div>
-  );
-};
 
 export default Postagem;

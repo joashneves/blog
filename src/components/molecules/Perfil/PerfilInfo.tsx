@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+
 import styles from './PerfilInfo.module.css'
 
 import fotoPerfil0 from '../../../assets/perfil_joas_0.jpeg'
 
-import gamemaker from '../../../assets/light-gamemaker2-svgrepo-com.svg'
 
 const PerfilInfo = () => {
 

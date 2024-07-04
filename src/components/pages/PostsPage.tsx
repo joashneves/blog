@@ -1,4 +1,4 @@
-import Social from "../atoms/Social/Social"
+
 import Hud from "../molecules/Hud/Hud"
 import PostsTamplate from "../templates/PostsTamplate/PostsTamplate"
 import Cabecalho from "../templates/cabecalho/Cabecalho"

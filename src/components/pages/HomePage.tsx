@@ -1,5 +1,4 @@
 // HomePage.js
-import React from "react";
 import Hud from "../molecules/Hud/Hud";
 import Home from "../molecules/Home/Home";
 import Cabecalho from "../templates/cabecalho/Cabecalho";
