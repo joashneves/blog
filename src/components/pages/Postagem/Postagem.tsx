@@ -19,7 +19,7 @@ const Postagem = () => {
     // Função para importar o conteúdo do arquivo MDX como texto
     const fetchMDXContent = async () => {
       try {
-        const response = await fetch(`../../../public/publicacao/post${id}.md`);
+        const response = await fetch(`https://blog-eosin-pi-22.vercel.app/public/publicacao/post${id}.md`);
         if (!response.ok) {
           throw new Error(`Failed to fetch MDX content for post ${id}`);
         }
