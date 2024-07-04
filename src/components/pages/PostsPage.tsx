@@ -4,7 +4,7 @@ import PostsTamplate from "../templates/PostsTamplate/PostsTamplate"
 import Cabecalho from "../templates/cabecalho/Cabecalho"
 
 import styles from './PostsPage.module.css'
-import json from '../../../post/publicacao/publicacao.json'
+import json from '../../../public/publicacao/publicacao.json'
 
 const PostsPage = () =>{
     return(
