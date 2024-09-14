@@ -6,13 +6,14 @@ interface PostsTamplateProps  {
     titulo : string,
     descricao: string,
     data: string,
+    link: string,
     id: number
 }
 
 const PostsTamplate : React.FC<PostsTamplateProps> = (props) =>{
     return(<>
      <aside className="bg-black text-white p-6  w-full  font-mono">
-     <Link className={styles.link} to={`/Postagem/${props.id}`}>
+     <Link className={styles.link} to={`${props.link}`}>
             <div className="flex justify-between items-center">
                 <div className="flex space-x-2 text-red-500">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
