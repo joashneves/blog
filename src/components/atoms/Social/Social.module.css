@@ -49,6 +49,10 @@
     background-color: #fa5c5c;
     transition-duration: .3s;
   }
+  .containerSeven:hover{
+    background-color: #00ccff;
+    transition-duration: .3s;
+  }
   .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
@@ -68,7 +72,13 @@
   .itchioSvg path {
     fill: rgb(255, 255, 255);
   }
-
+  .bsySvg{
+    padding: 12px;
+    width: auto;
+  }
+  .bsySvg path {
+    fill: rgb(255, 255, 255);
+  }
   .socialContainer:hover .socialSvg  {
     animation: slide-in-top 0.3s both;
   }

@@ -22,5 +22,11 @@
         "descricao": "O github para o blog que voce se encontra.",
         "link": "https://github.com/joashneves/blog",
         "data": "25/07/2024"
+    },
+    {
+        "titulo": "Navegador Web",
+        "descricao": "Um navegador web basico criado em python.",
+        "link": "https://github.com/joashneves/NavegadorWebPython",
+        "data": "14/09/2024"
     }
 ]

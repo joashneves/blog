@@ -1,6 +1,7 @@
 import styles from './Social.module.css' // styles by https://github.com/vinodjangid07
 
 import itchio from '../../../assets/itch-svgrepo-com.svg'
+import bsky from '../../../assets/Bluesky_Logo.svg'
 const Social = () => {
     return (
         <div className={styles.card}>
@@ -38,6 +39,9 @@ const Social = () => {
             </a>
             <a href="https://github.com/joashneves" className={`${styles.socialContainer} ${styles.containerSix}`}>
                 <img src={itchio} alt='itchio-icon' className={`${styles.socialSvg} ${styles.itchioSvg}`} />
+            </a>
+            <a href="https://bsky.app/profile/joashneves.me" className={`${styles.socialContainer} ${styles.containerSeven}`}>
+                <img src={bsky} alt='bsky-icon' className={`${styles.socialSvg} ${styles.bsySvg}`} />
             </a>
         </div>
     );
