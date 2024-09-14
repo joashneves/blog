@@ -16,6 +16,7 @@ const PostsPage = () =>{
                         key={index} // Adicione uma chave única para cada item
                         titulo={data.titulo}
                         descricao={data.descricao}
+                        link={data.link}
                         id={data.id}
                         data={data.data}
                     />
