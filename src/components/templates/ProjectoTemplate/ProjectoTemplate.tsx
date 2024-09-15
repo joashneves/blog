@@ -24,6 +24,7 @@ const ProjectTemplate: React.FC<ProjectProps> = (props) => {
     }, [props.link]);
   
     return (
+      <>
       <article className={styles.card}>
         <a href={props.link} target="_blank" rel="noopener noreferrer">
           {previewImage && <img src={previewImage} alt={`Preview of ${props.link}`} />}
@@ -34,6 +35,7 @@ const ProjectTemplate: React.FC<ProjectProps> = (props) => {
           </div>
         </a>
       </article>
+      </>
     );
 }
 

@@ -30,6 +30,7 @@ const PostsTamplate : React.FC<PostsTamplateProps> = (props) =>{
             </div>
         </Link>
         </aside>
+        <hr/>
         </>)
 }
 
