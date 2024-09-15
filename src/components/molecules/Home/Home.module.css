@@ -1,4 +1,4 @@
-.inicio{
+.inicio {
     display: flex;
     padding: 2rem 12rem;
     flex-direction: column;
@@ -6,18 +6,18 @@
     align-self: center;
     background-color: #111111;
 }
-.titulo{
 
+.titulo {
     padding: 2rem 12rem;
     justify-self: center;
     place-self: center;
     align-self: center;
-
     font-style: oblique;
     font-size: 3rem;
     align-self: center;
 }
-.content{
+
+.content {
     display: grid;
     padding: 2rem 12rem;
     grid-template-columns: auto auto;
@@ -25,16 +25,52 @@
     align-self: center;
     background-color: #111111;
 }
-.content p{
+
+.content p {
     font-size: 1.2rem;
     margin: 6px;
 }
-.imagemLinha{
+
+.imagemLinha {
     height: 12rem;
     padding: 1rem;
     border-radius: 100%;
 }
-.imagemLinha:hover{
+
+.imagemLinha:hover {
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
-    -15px -15px 30px rgb(60, 60, 60);
+        -15px -15px 30px rgb(60, 60, 60);
 }
+
+/* Media query para telas com largura menor ou igual a 1366px */
+@media (max-width: 1440px) {
+    .inicio {
+        padding: 1rem 1rem; /* Reduzir o padding */
+    }
+
+    .titulo {
+        font-size: 2rem; /* Reduzir o tamanho da fonte */
+        padding: 1rem 6rem; /* Reduzir o padding */
+    }
+
+    .imagemLinha {
+        height: 8rem; /* Reduzir a altura da imagem */
+    }
+}
+
+/* Media query para telas com largura menor ou igual a 1366px */
+@media (max-width: 412) {
+    .inicio {
+        padding: 0rem; /* Reduzir o padding */
+    }
+
+    .titulo {
+        font-size: 2rem; /* Reduzir o tamanho da fonte */
+        padding: 0rem 0rem; /* Reduzir o padding */
+    }
+
+    .imagemLinha {
+        height: 0rem; /* Reduzir a altura da imagem */
+    }
+}
+
