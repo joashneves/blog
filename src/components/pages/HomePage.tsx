@@ -4,7 +4,6 @@ import Home from "../molecules/Home/Home";
 import Cabecalho from "../templates/cabecalho/Cabecalho";
 import translations from "../../../config/content.json"; // ajuste o caminho conforme necessário
 import PerfilInfo from "../molecules/Perfil/PerfilInfo";
-import ProjectTemplate from "../templates/ProjectoTemplate/ProjectoTemplate";
 import ProjectList from "../molecules/ProjectList/ProjectList";
 
 const HomePage = () => {
