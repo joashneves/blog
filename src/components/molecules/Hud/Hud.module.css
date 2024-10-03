@@ -1,126 +1,33 @@
 /* Estilos para o cabeçalho padrão da HUD (Head-Up Display) */
 .cabecario {
     display: flex;
-    position: sticky; /* Fixar o cabeçalho no topo durante o scroll */
-    top: 0; /* Garantir que a barra de navegação permaneça no topo */
-    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos da página */
-    background-color: var(--var-hud-color-black); /* Cor de fundo definida por uma variável */
-    width: 100%; /* Preenche a largura total da tela */
-    text-align: center; /* Centraliza o conteúdo opcionalmente */
-    padding: 1rem 0; /* Espaçamento interno vertical no cabeçalho */
-    margin-bottom: 1rem; /* Espaçamento inferior para separar do conteúdo abaixo */
-}
-
-/* Estilos para a visualização em desktop */
-@media (min-width: 412px) {
-/* Estilos para o cabeçalho padrão da HUD (Head-Up Display) */
-.cabecario {
-    display: flex;
-    position: sticky; /* Fixar o cabeçalho no topo durante o scroll */
-    top: 0; /* Garantir que a barra de navegação permaneça no topo */
-    justify-items: space-between;/* Garante que o cabeçalho esteja acima de outros elementos da página */
-    background-color: var(--var-hud-color-black); /* Cor de fundo definida por uma variável */
-    width: 100%; /* Preenche a largura total da tela */
-    text-align: center; /* Centraliza o conteúdo opcionalmente */
-}
-
-
-    /* Estilos para os links dentro da barra de navegação */
-    .cabecario .link {
-        margin: 0 1rem; /* Margem horizontal entre os links */
-        padding: 10px 20px; /* Espaçamento interno nos links */
-        border: 2px solid #fefefe; /* Borda dos links */
-        text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
-        color: #fefefe; /* Cor do texto */
-        text-decoration: none; /* Remove o sublinhado dos links */
-        font-size: 16px; /* Tamanho padrão da fonte */
-        transition: 0.3s; /* Suaviza a transição para hover */
-    }
-
-    /* Estilos para os links nos estados "link" e "visited" */
-    .link:link,
-    .link:visited {
-        font-size: 2rem; /* Aumenta o tamanho da fonte */
-        font-family: "Bodoni Moda SC", serif; /* Define a família de fontes */
-        font-optical-sizing: auto; /* Ajusta o tamanho óptico da fonte */
-        font-weight: 400; /* Peso da fonte */
-        color: rgba(255, 255, 255, 0.87); /* Cor branca com opacidade */
-        text-decoration: none; /* Sem sublinhado */
-        font-synthesis: none; /* Desativa a síntese automática da fonte */
-        text-rendering: optimizeLegibility; /* Otimiza a legibilidade */
-        -webkit-font-smoothing: antialiased; /* Suavização de fontes no Webkit */
-        -moz-osx-font-smoothing: grayscale; /* Suavização de fontes no macOS */
-    }
-
-    /* Estilos para o estado hover dos links */
-    .link:hover {
-        color: var(--var-hud-color-black); /* Muda a cor do texto no hover */
-        background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
-    }
-
-    /* Margem aplicada às imagens dentro do cabeçalho */
-    .cabecario img {
-        margin: 1rem; /* Espaçamento ao redor das imagens */
-    }
-
-    /* Estilos para o botão hamburger em desktop (oculto por padrão) */
-    .hamburger {
-        display: none;
-    }
-}
-
-/* Estilos para a tela de celulares */
-@media (max-width: 412px) {
-    /* Estilos para o botão hamburger */
-    .hamburger {
-        display: flex; /* Mostrar o botão hamburger em dispositivos móveis */
-        padding: 10px 0;
-        color: white;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        z-index: 1000;
-    }
-
-    /* Estilos para a barra de navegação padrão */
-.cabecario {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #111;
-    color: white;
-  }
-  
-  /* Estilos para a barra de navegação em celulares (412px de largura) */
-  .cabecarioLateral {
-    position: fixed;
+    position: sticky;
+    justify-content: space-evenly;
     top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #111;
-    padding: 1rem;
     z-index: 1000;
+    background-color: var(--var-hud-color-black);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Animação de esconder/mostrar */
   }
   
-  /* Links na barra lateral */
-  .linkLateral {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  /* Mantém a HUD oculta fora da tela */
+  .hidden {
+    transform: translateY(-100%);
+    opacity: 0; /* Opcional: diminui a opacidade para uma transição mais suave */
   }
   
-  /* Estilo comum dos links */
+  /* Estilos para o link */
   .link {
-    padding: 10px 0;
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
   }
   
   .link:hover {
-    color: #ccc;
+    color: var(--var-hud-color-purple);
   }
   
-}

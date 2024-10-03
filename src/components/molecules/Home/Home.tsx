@@ -16,7 +16,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = (props) => {
     return(
         <>
-        <article >
+        <article id="Inicio" >
         <div className={styles.inicio}>
             <h1 className={styles.titulo}>{props.titulo}</h1>
             <div className={styles.content}>

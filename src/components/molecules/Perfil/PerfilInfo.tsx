@@ -1,17 +1,13 @@
 
 import styles from './PerfilInfo.module.css'
 
-import fotoPerfil0 from '../../../assets/perfil_joas_0.jpeg'
-
-
 const PerfilInfo = () => {
 
     return (
-        <article className={styles.perfilInfo}>
-            <h1 >SOBRE MIM</h1>
+        <article id="Contato" className={styles.perfilInfo}>
+            <h1 className={styles.perfilPrimeiroTitulo}  >SOBRE MIM</h1>
             <div className={styles.sobreMim}>
-                <div><img className={styles.sobreMimFoto} src={fotoPerfil0} alt="minha foto" /></div>
-                <div><ul>
+                <ul>
                     <li>
                         Então, se você está aqui, provavelmente já me conhece, mas para aqueles que não me conhecem, meu nome é apenas Joás, sim, ele não tem H; eu coloco para ter um charme.
                     </li>
@@ -24,9 +20,15 @@ const PerfilInfo = () => {
                     <li>
                         Fato curioso: Em algum pais que eu não me lembro o nome existe uma palavra pra cada situação inesplicavel.
                     </li>
-                </ul></div>
+                </ul>
             </div>
-            <h1 >HABILIDADES</h1>
+            <hr />
+            <h2 className={styles.perfilSegundoTitulo} >HABILIDADES</h2>
+            <ul>
+                <li>
+                    Essas são algumas das minhas competencias.
+                </li>
+            </ul>
             <table className={styles.habilidades}>
                 <tr>
                     <td valign="top" width="33%">
@@ -59,7 +61,7 @@ const PerfilInfo = () => {
                     </td>
                 </tr>
             </table>
-            
+
 
         </article>
     );

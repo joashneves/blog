@@ -37,7 +37,7 @@ const Social = () => {
                     ></path>
                 </svg>
             </a>
-            <a href="https://github.com/joashneves" className={`${styles.socialContainer} ${styles.containerSix}`}>
+            <a href="https://joashneves.itch.io/" className={`${styles.socialContainer} ${styles.containerSix}`}>
                 <img src={itchio} alt='itchio-icon' className={`${styles.socialSvg} ${styles.itchioSvg}`} />
             </a>
             <a href="https://bsky.app/profile/joashneves.me" className={`${styles.socialContainer} ${styles.containerSeven}`}>

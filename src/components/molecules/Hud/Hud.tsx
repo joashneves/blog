@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styles from './Hud.module.css';
 
@@ -12,40 +11,41 @@ interface HudProps {
 
 const Hud: React.FC<HudProps> = ({
   inicio = 'Inicio',
-  posts = 'Posts',
   project = 'Portifolio',
-  contato = 'Contato'
+  contato = 'Sobre mim'
 }) => {
-  // Definir o breakpoint para celulares com largura máxima de 412px
-  const isMobile = useMediaQuery({ query: '(max-width: 412px)' });
+  const [isVisible, setIsVisible] = useState(true); // Estado para controlar a visibilidade do HUD
+  let lastScrollY = window.scrollY; // Posição inicial do scroll
 
-  // Estado para controlar a visibilidade do menu em dispositivos móveis
-  const [isMenuVisible, setIsMenuVisible] = useState(!isMobile);
-
-  // Função para alternar a visibilidade do menu
-  const toggleMenu = () => {
-    setIsMenuVisible(!isMenuVisible);
+  // Função para detectar o scroll
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // Usuário rolou para baixo, esconder HUD
+      setIsVisible(false);
+    } else {
+      // Usuário rolou para cima, mostrar HUD
+      setIsVisible(true);
+    }
+    lastScrollY = window.scrollY;
   };
 
-  return (
-    <header className={styles.cabecario}>
-      {/* Mostrar o botão "hamburger" apenas em dispositivos móveis */}
-      {isMobile && (
-        <button className={styles.hamburger} onClick={toggleMenu}>
-          ☰ {/* Ícone do menu hamburger */}
-        </button>
-      )}
+  useEffect(() => {
+    // Adiciona o listener de scroll
+    window.addEventListener('scroll', handleScroll);
 
-      {isMenuVisible ? (
-      <div className={isMobile ? styles.linkLateral  : ''}>
-        <Link className={styles.link} to='/' onClick={toggleMenu}>{inicio}</Link>
-        <Link className={styles.link} to='/Post' onClick={toggleMenu}>{posts}</Link>
-        <Link className={styles.link} to='/Project' onClick={toggleMenu}>{project}</Link>
-        <Link className={styles.link} to='/Contato' onClick={toggleMenu}>{contato}</Link>
-      </div>) : (<></>)
-      }
+    return () => {
+      // Remove o listener quando o componente é desmontado
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <header className={`${styles.cabecario} ${!isVisible ? styles.hidden : ''}`}>
+      <div><a className={styles.link} href="#Inicio">{inicio}</a></div>
+      <div><a className={styles.link} href="#Portifolio">{project}</a></div>
+      <div><a className={styles.link} href="#Contato">{contato}</a></div>
     </header>
   );
-}
+};
 
 export default Hud;
